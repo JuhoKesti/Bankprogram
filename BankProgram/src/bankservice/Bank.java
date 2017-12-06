@@ -153,10 +153,10 @@ public class Bank extends JFrame{	//extending Bank class to JFrame
 	
 	private void populateAccountTable() { //This method fills the JTable with data from the array myDB
 		for(int row = 0; row < dbItems; row++){
-			tableAccount.setValueAt(myDB[row].id, row, 0);
-			tableAccount.setValueAt(myDB[row].LName, row, 1);
-			tableAccount.setValueAt(myDB[row].FName, row, 2);
-			tableAccount.setValueAt(myDB[row].balance, row, 3);
+			tableAccount.setValueAt(myDB[row].getId(), row, 0);
+			tableAccount.setValueAt(myDB[row].getLName(), row, 1);
+			tableAccount.setValueAt(myDB[row].getFName(), row, 2);
+			tableAccount.setValueAt(myDB[row].getBalance(), row, 3);
 		}	
 	}
 	
